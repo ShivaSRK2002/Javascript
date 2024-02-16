@@ -1,0 +1,210 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    
+}
+.navbar-links a{
+    text-decoration: underline;
+    color: gray;
+
+}
+.navbar-menu{
+    display: none;
+
+}
+.side-navbar{
+    background-color: darkslategray;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+    
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+.header-button{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(169, 169, 169);
+
+
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+
+}
+
+/*service*/
+.service{
+    padding: 20px ;
+    
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.service-container-2 div{
+    background-color: rgb(188, 187, 187);
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    color:  rgb(84, 81, 81);
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    border-radius: 10px;
+    border: none;
+}
+.arrival-head{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.most-head{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+
+}
+.news button{
+    margin-top: 10px;
+    color:aliceblue;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color:rgb(109, 106, 106); 
+    color: white;
+
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 30%;
+}
+.product-box image{
+    border-radius: 10px;
+}
+@media screen and (max-width:700px){
+    .navbar-menu{
+        display: block;
+    }
+    
+    
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2 div{
+        flex-direction: column;
+    }
+
+}
+    
+
